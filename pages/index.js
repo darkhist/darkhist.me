@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import Nav from '../components/nav';
+import styles from '../styles/home.module.css';
 
 const Home = () => (
 	<div className={styles.container}>
@@ -11,6 +12,10 @@ const Home = () => (
 				rel="stylesheet"
 			></link>
 		</Head>
+
+		<header className={styles.header}>
+			<Nav />
+		</header>
 
 		<main className={styles.main}>
 			<h1 className={styles.title}>
