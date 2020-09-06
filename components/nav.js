@@ -8,17 +8,23 @@ const Nav = () => (
     <ul>
       <li>
         <Link href="/">
-          <Home className={styles.icon} />
+          <a>
+            <Home className={styles.icon} />
+          </a>
         </Link>
       </li>
       <li>
         <Link href="/blog">
-          <Edit className={styles.icon} />
+          <a>
+            <Edit className={styles.icon} />
+          </a>
         </Link>
       </li>
       <li>
         <Link href="/photo">
-          <Camera className={styles.icon} />
+          <a>
+            <Camera className={styles.icon} />
+          </a>
         </Link>
       </li>
       <li>
