@@ -1,26 +1,40 @@
+import Link from 'next/link';
 import { Home, Edit, Camera, GitHub, Instagram, Mail } from 'react-feather';
+
 import styles from '../styles/nav.module.css';
 
 const Nav = () => (
   <nav className={styles.nav}>
     <ul>
       <li>
-        <Home />
+        <Link href="/">
+          <Home className={styles.icon} />
+        </Link>
       </li>
       <li>
-        <Edit />
+        <Link href="/blog">
+          <Edit className={styles.icon} />
+        </Link>
       </li>
       <li>
-        <Camera />
+        <Link href="/photo">
+          <Camera className={styles.icon} />
+        </Link>
       </li>
       <li>
-        <GitHub />
+        <a href="https://github.com/darkhist">
+          <GitHub />
+        </a>
       </li>
       <li>
-        <Instagram />
+        <a href="https://instagram.com/darkhist">
+          <Instagram />
+        </a>
       </li>
       <li>
-        <Mail />
+        <a href="mailto:qmsalas321@gmail.com">
+          <Mail />
+        </a>
       </li>
     </ul>
   </nav>
