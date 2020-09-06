@@ -23,6 +23,26 @@ const Home = () => (
         <br />
         <ins>darkhist</ins>
       </h1>
+
+      <section className={styles.section}>
+        <div className={styles.about}>
+          <p>I&apos;m a full stack software engineer based in Des Moines, IA</p>
+          <p>
+            Currently, I work at
+            <a
+              href="https://principal.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.principal}
+            >
+              Principal
+            </a>
+            where I help create fantastic web experiences for people
+          </p>
+
+          <p>I&apos;m passionate about accessibility, open source software, and electronic music</p>
+        </div>
+      </section>
     </main>
   </div>
 );
