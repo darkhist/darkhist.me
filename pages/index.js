@@ -19,8 +19,7 @@ const Home = () => (
 
     <main className={styles.main}>
       <h1 className={styles.title}>
-        hi, &apos;m
-        <del>Quinn</del>
+        hi, I&apos;m <del>Quinn</del>
         <br />
         <ins>darkhist</ins>
       </h1>
