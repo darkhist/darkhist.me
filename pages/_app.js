@@ -1,23 +1,18 @@
 import PropTypes from 'prop-types';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps, router }) => (
-  <motion.div
-    key={router.pathname}
-    initial="pageInitial"
-    animate="pageAnimate"
-    variants={{
-      pageInitial: {
-        opacity: 0
-      },
-      pageAnimate: {
-        opacity: 1
-      }
-    }}
-  >
-    <Component {...pageProps} />
-  </motion.div>
+  <AnimatePresence>
+    <motion.div
+      key={router.pathname}
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <Component {...pageProps} />
+    </motion.div>
+  </AnimatePresence>
 );
 
 MyApp.propTypes = {
