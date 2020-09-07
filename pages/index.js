@@ -26,7 +26,7 @@ const Home = () => (
 
       <section className={styles.section}>
         <div className={styles.about}>
-          <p>I&apos;m a full stack software engineer based in Des Moines, IA</p>
+          <p>I&apos;m a software engineer based in Des Moines, IA</p>
           <p>
             Currently, I work at
             <a
@@ -37,7 +37,7 @@ const Home = () => (
             >
               Principal
             </a>
-            where I help create fantastic web experiences for people
+            where I help make fantastic web experiences for people
           </p>
 
           <p>I&apos;m passionate about accessibility, open source software, and electronic music</p>
