@@ -1,8 +1,13 @@
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import matter from 'gray-matter';
 
+import Layout from '../../components/Layout';
+
 import getSlugs from '../../util/getSlugs';
+
+// import styles from '../../styles/post.module.css';
 
 const BlogPost = ({ frontmatter, markdownBody }) => {
   if (!frontmatter) return <></>;
@@ -10,13 +15,21 @@ const BlogPost = ({ frontmatter, markdownBody }) => {
   const { title, date } = frontmatter;
 
   return (
-    <article>
+    <Layout>
       <h1>{title}</h1>
       <small>{date}</small>
+      <article>
+        <div>
+          <ReactMarkdown source={markdownBody} />
+        </div>
+      </article>
+
       <div>
-        <ReactMarkdown source={markdownBody} />
+        <Link href="/blog">
+          <a> Go Back </a>
+        </Link>
       </div>
-    </article>
+    </Layout>
   );
 };
 
@@ -35,10 +48,7 @@ export const getStaticProps = async ({ ...ctx }) => {
 };
 
 export const getStaticPaths = async () => {
-  const blogSlugs = ((context) => {
-    return getSlugs(context);
-  })(require.context('../../posts', true, /\.md$/));
-
+  const blogSlugs = ((context) => getSlugs(context))(require.context('../../posts', true, /\.md$/));
   const paths = blogSlugs.map((slug) => `/blog/${slug}`);
 
   return {

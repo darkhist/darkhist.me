@@ -1,23 +1,9 @@
-import Head from 'next/head';
-import Nav from '../components/nav';
+import Layout from '../components/Layout';
 import styles from '../styles/home.module.css';
 
 const Home = () => (
-  <div className={styles.container}>
-    <Head>
-      <title>Quinn Salas</title>
-      <link rel="icon" href="/favicon.ico" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
-        rel="stylesheet"
-      />
-    </Head>
-
-    <header className={styles.header}>
-      <Nav />
-    </header>
-
-    <main className={styles.main}>
+  <Layout>
+    <div className={styles.wrapper}>
       <h1 className={styles.title}>
         hi, I&apos;m <del>Quinn</del>
         <br />
@@ -43,8 +29,8 @@ const Home = () => (
           <p>I&apos;m passionate about accessibility, open source software, and electronic music</p>
         </div>
       </section>
-    </main>
-  </div>
+    </div>
+  </Layout>
 );
 
 export default Home;
