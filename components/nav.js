@@ -28,12 +28,12 @@ const Nav = () => (
         </Link>
       </li>
       <li>
-        <a href="https://github.com/darkhist">
+        <a href="https://github.com/darkhist" target="_blank" rel="noreferrer">
           <GitHub />
         </a>
       </li>
       <li>
-        <a href="https://instagram.com/darkhist">
+        <a href="https://instagram.com/darkhist" target="_blank" rel="noreferrer">
           <Instagram />
         </a>
       </li>
