@@ -12,9 +12,15 @@ const Home = () => (
 
       <section className={styles.section}>
         <div className={styles.about}>
-          <p>I&apos;m a software engineer based in Des Moines, IA</p>
           <p>
-            Currently, I work at
+            It&apos;s nice to meet you
+            <span role="img" aria-label="smiley face" className={styles.smile}>
+              :~)
+            </span>
+          </p>
+          <p>I&apos;m a software engineer based in Des Moines</p>
+          <p>
+            Currently, I&apos;m building awesome web experiences
             <a
               href="https://principal.com"
               target="_blank"
@@ -23,7 +29,6 @@ const Home = () => (
             >
               Principal
             </a>
-            where I help make fantastic web experiences for people
           </p>
 
           <p>I&apos;m passionate about accessibility, open source software, and electronic music</p>
