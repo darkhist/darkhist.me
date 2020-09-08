@@ -23,7 +23,8 @@
     "prettier": "^2.1.1",
     "raw-loader": "^4.0.1",
     "react-feather": "^2.0.8",
-    "react-markdown": "^4.3.1"
+    "react-markdown": "^4.3.1",
+    "react-syntax-highlighter": "^13.5.3"
   },
   "scripts": {
     "dev": "next dev",
