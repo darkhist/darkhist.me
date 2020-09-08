@@ -33,7 +33,7 @@ const BlogPost = ({ frontmatter, markdownBody }) => {
   return (
     <Layout>
       <h1>{title}</h1>
-      <small>{date}</small>
+      <p>{date}</p>
       <article>
         <ReactMarkdown escapeHtml={false} source={markdownBody} renderers={{ code: CodeBlock }} />
       </article>
