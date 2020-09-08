@@ -4,6 +4,7 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
+    "eslint-plugin-cypress": "^2.11.1",
     "framer-motion": "^2.6.6",
     "next": "9.5.3",
     "prop-types": "^15.7.2",
@@ -11,6 +12,8 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "cypress": "^5.1.0",
+    "cypress-axe": "^0.8.1",
     "eslint": "^7.8.1",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
@@ -30,6 +33,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext .js"
+    "lint": "eslint . --ext .js",
+    "int": "yarn cypress run --browser chrome --no-exit",
+    "cy:open": "yarn cypress open"
   }
 }
