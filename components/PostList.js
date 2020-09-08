@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
+import styles from '../styles/list.module.css';
+
 const PostList = ({ posts }) =>
   posts && (
     <div>
-      <ul>
+      <ul className={styles.list}>
         {posts.map((post) => (
           <li key={post.slug}>
             <Link href={{ pathname: `/blog/${post.slug}` }}>
