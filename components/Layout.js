@@ -23,8 +23,12 @@ const Layout = ({ children }) => (
   </div>
 );
 
+Layout.defaultProps = {
+  children: []
+};
+
 Layout.propTypes = {
-  children: PropTypes.object.isRequired
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node])
 };
 
 export default Layout;
