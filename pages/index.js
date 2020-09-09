@@ -3,7 +3,7 @@ import styles from '../styles/home.module.css';
 
 const Home = () => (
   <Layout>
-    <div>
+    <div className={styles.wrapper}>
       <h1 className={styles.title}>
         hi, I&apos;m <del>Quinn</del>
         <br />
