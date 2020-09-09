@@ -1,39 +1,31 @@
 ---
-title: Automated Accessibility Testing with Cypress (Part One)
-date: 'September 7, 2020'
+title: Automated Accessibility Testing with Cypress Part I
+date: '09 / 07 / 2020'
 ---
 
 I'm in the middle of making this website, and figured that now would be a good time to add tests which automatically run accessibility audits
 
-So, let's do that
+So, let's do that!
 
 ## Getting Started
 
-First, we need two plugins to do some magic for us 🔮  
-I'll be using [Yarn](https://yarnpkg.com/) throughout this post 🧶
+First, we need two plugins to do some magic for us 🔮
 
 ```bash
 yarn add cypress cypress-axe -D
 ```
 
-### What's Cypress?
+## What is Cypress?
 
-[Cypress](https://www.cypress.io/) is an end to end testing library for the web
+With [Cypress](https://www.cypress.io/) is an end to end testing library
 
 With Cypress, we can simulate how people use a site and make assertions about what their experience should be like
 
-We can test for lots of scenarios, including:
-
-1. Showing the right page when a link is clicked
-2. Showing warnings when a form is invalid
-3. Showing the correct stuff on mobile view
-4. Etc
-
-Today, we'll be using Cypress to visit some pages and check for accessibility issues
+Today, we'll be using it to check for accessibility issues
 
 Follow along to set up automatic accessibility testing on your own site :~)
 
-## Cypress Set Up
+## Setting up Cypress
 
 After installing Cypress, run
 
@@ -43,11 +35,13 @@ yarn run cypress open
 
 to start Cypress for the first time
 
-Cypress will generate a bunch of folders & files, but, we can ignore most of them for now
+Cypress will generate some files, but let's ignore those for now
 
-### Cypress + Visual Studio Code
+Afterwards, feel free to close Cypress while we set up some other stuff
 
-If you're using Visual Studio Code like I am, add a `tsconfig.json`
+### Cypress & Visual Studio Code
+
+If you're using Visual Studio Code like me, add a `tsconfig.json`
 to the root of your `cypress` directory to enable autocompletion for Cypress commands
 
 ```json
@@ -64,9 +58,9 @@ to the root of your `cypress` directory to enable autocompletion for Cypress com
 
 > You might need to restart Visual Studio Code for intellisense to start working correctly
 
-### Cypress + ESLint
+### Cypress & ESLint
 
-If you're using the fantastic (and only mildly annoying) ESLint package to lint your code, you'll need to do a couple things to prevent any undue warnings
+If you're using ESLint, you'll need to do a couple things to prevent any undue warnings
 
 First, run
 
@@ -76,7 +70,7 @@ yarn add eslint-plugin-cypress --D
 
 to install the Cypress ESLint plugin
 
-Then, update your `.eslintrc.json` to configure the plugin
+Then, update your `.eslintrc.json` to configure it
 
 ```json
 {
@@ -89,7 +83,7 @@ Then, update your `.eslintrc.json` to configure the plugin
 Remember that `cypress-axe` plugin we installed?
 Well, that's the plugin that actually does the accessibility audits for us, so let's set that up
 
-Update `cypress/support/index.js` to enable the use of `cypress-axe` commands in our tests
+Update `cypress/support/index.js` to enable using `cypress-axe` commands like
 
 ```js
 import 'cypress-axe';
@@ -103,20 +97,12 @@ Okay, now that we have everything set up, let's delete the existing test files b
 rm -rf cypress/integration/examples
 ```
 
-Great! We're ready to start writing some tests!
+Great! We're _officially_ ready to start writing some tests!
 
-## Writing Tests
-
-Let's start by creating a test file and writing our first test
-
-```bash
-touch cypress/integration/a11y.spec.js
-```
-
-Now we can write our first test!
+Let's create a test file called `cypress/integration/a11y.spec.js` and write our first test
 
 ```js
-describe('a11y', () => {
+describe('/', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000');
     cy.injectAxe();
@@ -128,14 +114,37 @@ describe('a11y', () => {
 });
 ```
 
-## Running our Tests
+This test will visit our site at `localhost:3000`, add `axe` to the page, and then run `cy.checka11y()` to check for accessibility issues
 
-Let's add a command to run our integration tests
+Tests for routes like `/about` and `/blog` will be almost identical  
+We just need to change the route in `cy.visit(...)`
+
+## Running Tests
+
+If you're using [Next.js](https://nextjs.org/) like me, you'll want to run the tests against the production version of your app
+
+To do so, run `yarn build && yarn start`
+
+Okay, now that our server is running, let's add a nifty command to run our integration tests
 
 In `package.json`, add the following
 
 ```json
   "scripts": {
-    "int": "yarn cypress run --browser chrome --no-exit"
+    "int": "yarn cypress run --browser electron --headed --no-exit"
   }
 ```
+
+Now, we can run our test with `yarn int`
+
+If your test passed, congrats! 🎉
+
+If a test should fail, errors will be display in the command log
+
+You can find more details and (hopefully) fix your issue by clicking the log entry and opening up the Chrome DevTools console
+
+> `cypress-axe` is really awesome, but it isn't a silver bullet! There's no replacement for manual accessibility auditing!
+
+## Thanks for Reading!
+
+Stay tuned for Part II where I'll cover running these tests automatically with Github Actions!
