@@ -1,4 +1,4 @@
-describe('a11y', () => {
+describe('/', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000');
     cy.injectAxe();
