@@ -13,7 +13,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
-  font-feature-settings: 'ss02';
+  font-feature-settings: 'zero';
   background-color: #141414;
   color: white;
 }
