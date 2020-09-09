@@ -1,1 +1,11 @@
-# Comment
+name: init workflow
+
+on: [push]
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: |
+          echo "goodmorning"
