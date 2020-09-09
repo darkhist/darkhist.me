@@ -6,7 +6,7 @@ import getPosts from '../util/getPosts';
 
 const Blog = ({ posts }) => (
   <Layout>
-    <h1> Blog </h1>
+    <h1> Thoughts, Ideas, and Everything Else </h1>
     <PostList posts={posts} />
   </Layout>
 );

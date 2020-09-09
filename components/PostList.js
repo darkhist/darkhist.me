@@ -10,7 +10,7 @@ const PostList = ({ posts }) =>
         {posts.map((post) => (
           <li key={post.slug}>
             <Link href={{ pathname: `/blog/${post.slug}` }}>
-              <a>{post.frontmatter.title}</a>
+              <a className={styles.postTitle}>{post.frontmatter.title}</a>
             </Link>
           </li>
         ))}
