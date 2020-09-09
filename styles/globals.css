@@ -28,6 +28,7 @@ a {
 }
 
 /* markdown styles */
+/* inline code snippets */
 p > code {
   background-color: #2b2b2b;
   color: #ffa07a;
@@ -35,6 +36,7 @@ p > code {
   margin: 0 2px;
 }
 
+/* blockquotes */
 blockquote > p {
   border-left: 10px solid white;
   padding: 0 0 0 1rem;
