@@ -37,18 +37,30 @@ article > p > a {
   text-decoration: underline;
 }
 
+/* code blocks */
+pre {
+  font-size: 1rem;
+}
+
 /* inline code snippets */
 p > code {
   background-color: #2b2b2b;
   color: #ffa07a;
-  font-size: 1.5rem;
   margin: 0 2px;
+  overflow-wrap: break-word;
+}
+
+@media screen and (min-width: 768px) {
+  p > code {
+    font-size: 1.5rem;
+  }
 }
 
 /* blockquotes */
 blockquote > p {
   border-left: 10px solid white;
   padding: 0 0 0 1rem;
+  margin: 0 -1.25rem;
   font-style: italic;
 }
 

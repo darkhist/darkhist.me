@@ -35,20 +35,18 @@ const BlogPost = ({ frontmatter, markdownBody }) => {
 
   return (
     <Layout>
-      <div className={styles.wrapper}>
-        <h1 className={styles.title}>{title}</h1>
-        <p className={styles.date}>{date}</p>
-        <div className={styles.divider}>
-          <span role="presentation"> &#9759; </span>
-        </div>
-        <article className={styles.content}>
-          <ReactMarkdown escapeHtml source={markdownBody} renderers={{ code: CodeBlock }} />
-        </article>
-        <div className={styles.back}>
-          <Link href="/blog">
-            <motion.a whileHover={{ scale: 1.125 }}> Go back </motion.a>
-          </Link>
-        </div>
+      <h1 className={styles.title}>{title}</h1>
+      <p className={styles.date}>{date}</p>
+      <div className={styles.divider}>
+        <span role="presentation"> &#9759; </span>
+      </div>
+      <article className={styles.content}>
+        <ReactMarkdown escapeHtml source={markdownBody} renderers={{ code: CodeBlock }} />
+      </article>
+      <div className={styles.back}>
+        <Link href="/blog">
+          <motion.a whileHover={{ scale: 1.125 }}> Go back </motion.a>
+        </Link>
       </div>
     </Layout>
   );
