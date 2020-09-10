@@ -34,7 +34,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --ext .js",
-    "int": "yarn cypress run --browser chrome --no-exit",
-    "cy:open": "yarn cypress open"
+    "prod": "yarn build; yarn start;",
+    "int": "yarn cypress open --browser electron"
   }
 }
