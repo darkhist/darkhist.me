@@ -1,9 +1,23 @@
 .wrapper {
-  margin: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0.025rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin: 6rem 2rem;
+  }
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
 }
 
 .smile {
@@ -13,20 +27,16 @@
 .section {
   display: flex;
   flex-direction: row;
-  width: 20rem;
+  width: fit-content;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    width: 20rem;
+  }
 }
 
 .principal {
   padding: 0 8px;
   text-decoration: underline;
-}
-
-@media screen and (max-width: 768px) {
-  .title {
-    margin: 0;
-  }
-
-  .section {
-    width: fit-content;
-  }
 }
