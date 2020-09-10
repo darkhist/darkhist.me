@@ -27,7 +27,16 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 /* markdown styles */
+/* links */
+article > p > a {
+  text-decoration: underline;
+}
+
 /* inline code snippets */
 p > code {
   background-color: #2b2b2b;

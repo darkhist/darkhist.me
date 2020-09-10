@@ -39,7 +39,6 @@
 }
 
 .btn:hover {
-  cursor: pointer;
   background: #d10f50;
   color: white;
 }
