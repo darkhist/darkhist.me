@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
 import PostList from '../components/PostList';
 import getPosts from '../util/getPosts';
-// import styles from '../styles/blog.module.css';
+import styles from '../styles/blog.module.css';
 
 const Blog = ({ posts }) => (
   <Layout>
-    <h1> Thoughts, Ideas, and Everything Else </h1>
+    <h1 className={styles.title}> Thoughts, Ideas, and Everything Else </h1>
     <PostList posts={posts} />
   </Layout>
 );
