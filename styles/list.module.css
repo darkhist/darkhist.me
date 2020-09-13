@@ -4,6 +4,10 @@
   list-style-type: none;
 }
 
+.list > li {
+  padding: 0 0 2rem 0;
+}
+
 @media screen and (min-width: 768px) {
   .list {
     margin: 2.75rem 0;
