@@ -12,10 +12,7 @@ const Blog = ({ posts }) => (
 );
 
 export const getStaticProps = async () => {
-  const posts = ((context) => {
-    return getPosts(context);
-  })(require.context('../posts', true, /\.md$/));
-
+  const posts = ((context) => getPosts(context))(require.context('../posts', true, /\.md$/));
   return {
     props: {
       posts
