@@ -9,7 +9,7 @@ const PostList = ({ posts }) =>
       <ul className={styles.list}>
         {posts.map((post) => (
           <li key={post.slug}>
-            <Link href={{ pathname: `/blog/${post.slug}` }}>
+            <Link href="/blog/[post]" as={`/blog/${post.slug}`}>
               <a className={styles.postTitle}>{post.frontmatter.title}</a>
             </Link>
           </li>
