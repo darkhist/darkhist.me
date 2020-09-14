@@ -12,12 +12,7 @@ const Home = () => (
 
       <section className={styles.section}>
         <div className={styles.about}>
-          <p>
-            It&apos;s nice to meet you
-            <span role="img" aria-label="smiley face" className={styles.smile}>
-              :~)
-            </span>
-          </p>
+          <p>It&apos;s nice to meet you</p>
           <p>I&apos;m a software engineer based in Des Moines</p>
           <p>
             Currently, I&apos;m building awesome web experiences at
@@ -30,8 +25,13 @@ const Home = () => (
               Principal
             </a>
           </p>
-
-          <p>I&apos;m passionate about accessibility, open source software, and electronic music</p>
+          <p>
+            I&apos;m really into accessibility, open source software, art, collecting pins, and
+            emoticons with noses
+            <span role="img" aria-label="smile" className={styles.smile}>
+              :~)
+            </span>
+          </p>
         </div>
       </section>
     </div>
