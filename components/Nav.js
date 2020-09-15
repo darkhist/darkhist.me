@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Home, Edit, Camera, GitHub, Instagram, Mail } from 'react-feather';
+import { Home, Edit, Box, GitHub, Instagram, Mail } from 'react-feather';
 
 import styles from '../styles/nav.module.css';
 
@@ -22,9 +22,9 @@ const Nav = () => (
         </Link>
       </motion.li>
       <motion.li whileHover={{ scale: 1.25 }}>
-        <Link href="/photo">
-          <a aria-label="Photos">
-            <Camera className={styles.icon} />
+        <Link href="/projects">
+          <a aria-label="Projects">
+            <Box className={styles.icon} />
           </a>
         </Link>
       </motion.li>
