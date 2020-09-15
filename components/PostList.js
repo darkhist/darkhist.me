@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
-import styles from '../styles/list.module.css';
+import styles from '../styles/postList.module.css';
 
 const PostList = ({ posts }) =>
   posts && (
