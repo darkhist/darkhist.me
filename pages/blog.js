@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
 import PostList from '../components/PostList';
+
 import getPosts from '../util/getPosts';
+
 import styles from '../styles/blog.module.css';
 
 const Blog = ({ posts }) => (

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { AnimatePresence, motion } from 'framer-motion';
+
 import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps, router }) => (
