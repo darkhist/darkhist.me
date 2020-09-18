@@ -51,7 +51,8 @@ const projects = [
   {
     title: 'Art Installation: Revival Magazine Issue 12 Twitter Bot',
     description: `I wrote a script to find tweets with the hashtag #RevivalNo12,
-    streamed them to my Terminal, and projected them so participants could share their experiences
+    streamed them to my Terminal, and projected them so people could share their
+    thoughts
     `,
     date: '2017',
     src: 'img/revival.png',
