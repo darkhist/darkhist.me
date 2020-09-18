@@ -15,7 +15,7 @@ const Home = () => (
           <p>It&apos;s nice to meet you</p>
           <p>I&apos;m a software engineer based in Des Moines</p>
           <p>
-            Currently, I&apos;m building awesome web experiences at
+            Currently, I&apos;m making cool stuff at
             <a
               href="https://principal.com"
               target="_blank"
