@@ -52,9 +52,7 @@ const BlogPost = ({ frontmatter, markdownBody }) => {
   );
 };
 
-export const getStaticProps = async ({ ...ctx }) => {
-  const { post } = ctx.params;
-
+export const getStaticProps = async ({ params: { post } }) => {
   const content = await import(`../../posts/${post}.md`);
   const data = matter(content.default);
 
