@@ -11,6 +11,7 @@ import Layout from '../../components/Layout';
 import styles from '../../styles/post.module.css';
 
 import getSlugs from '../../util/getSlugs';
+import formatDate from '../../util/formatDate';
 
 const CodeBlock = ({ language, value }) => (
   <SyntaxHighlighter language={language} style={a11yDark}>
@@ -36,7 +37,7 @@ const BlogPost = ({ frontmatter, markdownBody }) => {
   return (
     <Layout>
       <h1 className={styles.title}>{title}</h1>
-      <p className={styles.date}>{date}</p>
+      <p className={styles.date}>{formatDate(date)}</p>
       <div className={styles.divider}>
         <span role="presentation"> &#9759; </span>
       </div>
