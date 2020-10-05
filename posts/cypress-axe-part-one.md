@@ -1,6 +1,6 @@
 ---
 title: Automated Accessibility Testing with Cypress
-date: '09 / 07 / 2020'
+date: '2020-09-07'
 ---
 
 I'm in the middle of making this website, and figured that now would be a good time to add tests which automatically run accessibility audits
@@ -170,4 +170,4 @@ Never worry about deploying inaccessible code again!
 
 ## Cheers 🎉
 
-Thanks for reading! Share this post, follow me on [Twitter](https://twitter.com/quinnsalas), or [say hello](mailto:qmsalas321@gmail.com) :~)
+Thanks for reading! Share this post, follow me on [Twitter](https://twitter.com/quinnsalas), or [say hello](mailto:qmsalas321@gmail.com) <span role="img" aria-label="smiley face">:~)</span>

@@ -28,7 +28,7 @@ const Home = () => (
           <p>
             I&apos;m really into accessibility, open source software, art, collecting pins, and
             emoticons with noses
-            <span role="img" aria-label="smile" className={styles.smile}>
+            <span role="img" aria-label="smiley face" className={styles.smile}>
               :~)
             </span>
           </p>
