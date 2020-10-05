@@ -170,4 +170,4 @@ Never worry about deploying inaccessible code again!
 
 ## Cheers 🎉
 
-Thanks for reading! Share this post, follow me on [Twitter](https://twitter.com/quinnsalas), or [say hello](mailto:qmsalas321@gmail.com) :~)
+Thanks for reading! Share this post, follow me on [Twitter](https://twitter.com/quinnsalas), or [say hello](mailto:qmsalas321@gmail.com) <span role="img" aria-label="smiley face">:~)</span>
