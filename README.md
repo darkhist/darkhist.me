@@ -1,7 +1,5 @@
-# [qsalas.me](https://qsalas.me)
+# [darkhist.me](https://darkhist.me)
 
-Quinn's Internet Haus
+My home on the internet
 
-## Made With
-
-- [Next.js](https://nextjs.org/)
+Built with [Next.js](https://nextjs.org/), [React](https://reactjs.org/), and [Inter](https://rsms.me/inter/)
