@@ -42,7 +42,7 @@ const BlogPost = ({ frontmatter, markdownBody }) => {
         <span role="presentation"> &#9759; </span>
       </div>
       <article className={styles.content}>
-        <ReactMarkdown escapeHtml source={markdownBody} renderers={{ code: CodeBlock }} />
+        <ReactMarkdown escapeHtml={false} source={markdownBody} renderers={{ code: CodeBlock }} />
       </article>
       <div className={styles.back}>
         <Link href="/blog">
