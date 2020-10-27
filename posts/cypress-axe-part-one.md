@@ -153,8 +153,10 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Cypress Run
-        uses: cypress-io/github-action@v1
+        uses: cypress-io/github-action@v2
         with:
+          browser: chrome
+          headless: true
           build: yarn build
           start: yarn start
           wait-on: http://localhost:3000
