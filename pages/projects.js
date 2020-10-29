@@ -12,9 +12,9 @@ const projects = [
     `,
     href: 'https://hellotyche.com',
     ghref: 'https://github.com/darkhist/tyche',
-    date: '2020',
+    date: '2020 [WIP]',
     src: '/img/city.png',
-    alt: 'A busy city with a four-way intersection'
+    alt: 'A busy city with a four-way highway interchage and buildings'
   },
   {
     title: 'Bookworm',
@@ -25,8 +25,8 @@ const projects = [
     href: 'https://bookworm.netlify.app/',
     ghref: 'https://github.com/darkhist/bookworm',
     date: '2019',
-    src: '/img/books.png',
-    alt: 'Mechanical keyboard with glowing keys, The Alchemist, and The Stranger'
+    src: '/img/book.png',
+    alt: 'Open book, a latte with flower art, and a pair of glasses'
   },
   {
     title: 'Stomping Grounds Cafe',
@@ -55,7 +55,7 @@ const projects = [
     thoughts
     `,
     date: '2017',
-    src: 'img/revival.png',
+    src: '/img/revival.png',
     alt: 'A girl standing against a pink wall holding a magazine'
   }
 ];

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import PropTypes from 'prop-types';
 import { GitHub } from 'react-feather';
 
@@ -5,8 +6,8 @@ import styles from '../styles/project.module.css';
 
 const Project = ({ title, description, href, ghref, date, src, alt }) => (
   <div className={styles.row}>
-    <div className={styles.imgWrapper}>
-      <img src={src} alt={alt} className={styles.img} />
+    <div>
+      <Image src={src} alt={alt} width={250} height={250} className={styles.img} />
     </div>
     <div className={styles.content}>
       <a href={href} className={styles.title} target="_blank" rel="noopener noreferrer">
@@ -22,7 +23,7 @@ const Project = ({ title, description, href, ghref, date, src, alt }) => (
             rel="noopener noreferrer"
             aria-label="View this project on Github"
           >
-            <GitHub size={24} />
+            <GitHub />
           </a>
         )}
       </div>
