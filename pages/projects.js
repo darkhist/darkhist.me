@@ -25,7 +25,7 @@ const projects = [
     href: 'https://bookworm.netlify.app/',
     ghref: 'https://github.com/darkhist/bookworm',
     date: '2019',
-    src: '/img/books.png',
+    src: '/img/book.png',
     alt: 'Mechanical keyboard with glowing keys, The Alchemist, and The Stranger'
   },
   {
@@ -55,7 +55,7 @@ const projects = [
     thoughts
     `,
     date: '2017',
-    src: 'img/revival.png',
+    src: '/img/revival.png',
     alt: 'A girl standing against a pink wall holding a magazine'
   }
 ];
