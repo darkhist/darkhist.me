@@ -12,9 +12,9 @@ const projects = [
     `,
     href: 'https://hellotyche.com',
     ghref: 'https://github.com/darkhist/tyche',
-    date: '2020',
+    date: '2020 [WIP]',
     src: '/img/city.png',
-    alt: 'A busy city with a four-way intersection'
+    alt: 'A busy city with a four-way highway interchage and buildings'
   },
   {
     title: 'Bookworm',
@@ -26,7 +26,7 @@ const projects = [
     ghref: 'https://github.com/darkhist/bookworm',
     date: '2019',
     src: '/img/book.png',
-    alt: 'Mechanical keyboard with glowing keys, The Alchemist, and The Stranger'
+    alt: 'Open book, a latte with flower art, and a pair of glasses'
   },
   {
     title: 'Stomping Grounds Cafe',
