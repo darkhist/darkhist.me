@@ -2,6 +2,7 @@
   margin: 2.5rem 0;
   padding: 0;
   list-style-type: none;
+  text-align: center;
 }
 
 .list > li {
@@ -10,7 +11,7 @@
 
 @media screen and (min-width: 768px) {
   .list {
-    margin: 2.75rem 0;
+    margin: 3rem 0;
   }
 }
 

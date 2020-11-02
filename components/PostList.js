@@ -7,7 +7,7 @@ import formatDate from '../util/formatDate';
 
 const PostList = ({ posts }) =>
   posts && (
-    <div>
+    <div className={styles.listContainer}>
       <ul className={styles.list}>
         {posts
           .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))

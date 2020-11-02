@@ -6,7 +6,7 @@ import styles from '../styles/project.module.css';
 
 const Project = ({ title, description, href, ghref, date, src, alt }) => (
   <div className={styles.row}>
-    <div>
+    <div className={styles.imgContainer}>
       <Image src={src} alt={alt} width={250} height={250} className={styles.img} />
     </div>
     <div className={styles.content}>

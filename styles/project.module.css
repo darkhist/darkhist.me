@@ -4,12 +4,10 @@
   justify-content: center;
 }
 
-.imgWrapper {
+.imgContainer {
   display: flex;
-  flex-direction: column;
-  height: 225px;
-  width: 225px;
-  margin: 0 auto 1rem auto;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .img {
@@ -52,12 +50,6 @@
 @media screen and (min-width: 768px) {
   .row {
     flex-direction: row;
-  }
-
-  .imgWrapper {
-    margin: auto 0;
-    height: 250px;
-    width: 250px;
   }
 
   .content {
