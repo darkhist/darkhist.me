@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import PropTypes from 'prop-types';
-import { GitHub } from 'react-feather';
+import { GitHub, Github } from 'react-feather';
 
 import styles from '../styles/project.module.css';
 
@@ -16,16 +16,19 @@ const Project = ({ title, description, href, ghref, date, src, alt }) => (
       <p>{description}</p>
       <div className={styles.misc}>
         <span className={styles.date}>{date}</span>
-        {ghref && (
-          <a
-            href={ghref}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View this project on Github"
-          >
-            <GitHub />
-          </a>
-        )}
+        <span>
+          {ghref && (
+            <a
+              className={styles.gh}
+              href={ghref}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View this project on Github"
+            >
+              <GitHub />
+            </a>
+          )}
+        </span>
       </div>
     </div>
   </div>

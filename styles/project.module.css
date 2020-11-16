@@ -28,13 +28,10 @@
   margin: 1rem 0;
 }
 
-.misc {
-  display: flex;
-  flex-direction: row;
-}
-
-.misc > a {
-  padding: 2px 0 0 0;
+.gh > svg {
+  position: relative;
+  right: 8px;
+  top: 2.25px;
 }
 
 .date {
