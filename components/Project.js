@@ -25,7 +25,7 @@ const Project = ({ title, description, href, ghref, date, src, alt }) => (
               rel="noopener noreferrer"
               aria-label="View this project on Github"
             >
-              <GitHub />
+              <GitHub size={16} />
             </a>
           )}
         </span>
