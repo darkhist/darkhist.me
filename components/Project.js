@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import PropTypes from 'prop-types';
-import { GitHub, Github } from 'react-feather';
+import { GitHub } from 'react-feather';
 
 import styles from '../styles/project.module.css';
 
