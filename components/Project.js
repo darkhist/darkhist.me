@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import PropTypes from 'prop-types';
-import { GitHub } from 'react-feather';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import styles from '../styles/project.module.css';
 
@@ -25,7 +26,7 @@ const Project = ({ title, description, href, ghref, date, src, alt }) => (
               rel="noopener noreferrer"
               aria-label="View this project on Github"
             >
-              <GitHub size={16} />
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           )}
         </span>
