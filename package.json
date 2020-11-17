@@ -11,6 +11,9 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/react-fontawesome": "^0.1.12",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "cypress": "^5.1.0",
     "cypress-axe": "^0.8.1",
     "eslint": "^7.8.1",
