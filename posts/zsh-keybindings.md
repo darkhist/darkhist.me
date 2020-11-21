@@ -3,21 +3,17 @@ title: Creating Keyboard Shortcuts for zsh & Hyper
 date: '2020-11-21'
 ---
 
-> Note: Shortcuts in this article use Mac keybindings
-
 ## TL;DR
 
-If you're just looking for a solid list of keyboard shortcuts for zsh, [this is a great one](https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/key-bindings.zsh)
+If you're just looking for a solid list of keyboard shortcuts for zsh – [this is a great one](https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/key-bindings.zsh)
 
 I didn't use the list because I found it too exhaustive, but I think it's a good reference!
 
 ## Keyboard Shortcuts for Zsh
 
-I just learned that typing `Option + W` will delete the last word you've typed in your Terminal, which is super helpful because I'm constantly mistyping commands <span role="img" aria-label="facepalm">🤦🏼‍♂️</span>
+I just learned that typing `Option + W` will delete the last word you've typed in your Terminal, which is super helpful because I'm constantly mistyping commands, <span role="img" aria-label="facepalm">🤦🏼‍♂️</span> but I'm lazy, so I decided to create my own keyboard shortcut
 
-– but I'm lazy, so I decided to create my own keyboard shortcut
-
-After lots of investigating, I learned that I could do this by adding this line to my `.zshrc` file:
+After lots of investigating, I learned that I could do so by adding this line to my `.zshrc` file:
 
 ```zsh
 bindkey "q" backward-kill-word
@@ -29,7 +25,7 @@ Note that the `bindkey` command follows the pattern:
 bindkey "[key sequence]" [command]
 ```
 
-For example, the keyboard shortcut to map `Control + N` to delete the last character typed is:
+For example, the keyboard shortcut to map `Control + N` to delete the last character you typed is:
 
 ```zsh
 bindkey "^N" backward-delete-char
@@ -45,9 +41,7 @@ All the available commands can be found [on the zsh website](http://zsh.sourcefo
 
 ## Keyboard Shortcuts for Hyper
 
-You can add keyboard shortcuts in Hyper by opening a new shell and pressing `Command + ,`
-
-Then, edit your `.hyper.js` file to include:
+You can add keyboard shortcuts in Hyper by opening a new tab and pressing `Command + ,` and adding the following to your `.hyper.js` file:
 
 ```js
 keymaps: {
@@ -56,9 +50,9 @@ keymaps: {
 }
 ```
 
-More shortcuts for Hyper can be found [here](https://github.com/vercel/hyper/blob/master/app/keymaps/darwin.json)
+You can find more shortcuts [here](https://github.com/vercel/hyper/blob/master/app/keymaps/darwin.json)
 
-> These shortcuts are for the Darwin operating system, but there are others for linux and win32
+> These shortcuts are for the Darwin operating system, but there are others for linux and win32!
 
 ## P.S
 
