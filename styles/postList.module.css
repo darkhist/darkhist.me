@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.postTitle {
+  font-size: 36px;
+}
+
 .postDate {
   font-size: 32px;
 }
