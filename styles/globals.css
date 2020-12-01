@@ -67,7 +67,7 @@ article > ol > li > a {
 
 /* code blocks */
 pre {
-  font-size: 1rem;
+  font-size: 24px;
 }
 
 /* inline code snippets */
@@ -80,7 +80,7 @@ p > code {
 
 @media screen and (min-width: 768px) {
   p > code {
-    font-size: 1.5rem;
+    font-size: 30px;
   }
 }
 
