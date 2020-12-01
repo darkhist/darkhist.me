@@ -1,23 +1,17 @@
 .wrapper {
   display: flex;
-  flex-direction: column;
-  margin: 0.025rem auto;
-}
-
-@media screen and (min-width: 768px) {
-  .wrapper {
-    margin: 6rem 2rem;
-  }
+  flex-direction: row;
+  min-height: 100%;
 }
 
 .title {
-  font-size: 1.5rem;
-}
-
-@media screen and (min-width: 768px) {
-  .title {
-    font-size: 3rem;
-  }
+  font-size: 2rem;
+  text-align: left;
+  background-image: url('/img/line.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.9;
 }
 
 .smile {
@@ -25,18 +19,46 @@
 }
 
 .section {
+  font-size: 2.25rem;
   display: flex;
-  flex-direction: row;
-  width: fit-content;
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    width: 20rem;
-  }
+  align-content: center;
+  min-height: 75%;
+  width: 100%;
+  color: black;
+  margin: 0 auto;
 }
 
 .principal {
   padding: 0 8px;
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 4rem;
+    margin: 2rem;
+    width: 45vw;
+    padding: 1rem 2rem;
+    color: white;
+  }
+
+  .wrapper {
+    flex-direction: row;
+    margin: 2rem;
+    border: 3px solid black;
+  }
+
+  .section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    width: 65vw;
+  }
+
+  .hi {
+    text-decoration: underline;
+  }
 }

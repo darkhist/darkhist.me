@@ -18,8 +18,8 @@ body {
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
   font-feature-settings: 'zero';
-  background-color: #141414;
-  color: white;
+  background-color: white;
+  min-height: 100%;
 }
 
 a {
