@@ -45,7 +45,7 @@ const projects = [
     href: 'https://github.com/darkhist/debugger.html',
     ghref: 'https://github.com/darkhist/debugger.html',
     date: '2018',
-    src: '/img/darkhist.png',
+    src: '/img/avatar.png',
     alt: 'Quinn Salas at the San Francisco Museum of Modern Art'
   },
   {

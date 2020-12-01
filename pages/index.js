@@ -32,6 +32,11 @@ const Home = () => (
               :~)
             </span>
           </p>
+          <p>
+            <a className={styles.hi} href="mailto:qmsalas321@gmail.com">
+              Say hello!
+            </a>
+          </p>
         </div>
       </section>
     </div>

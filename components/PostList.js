@@ -16,7 +16,7 @@ const PostList = ({ posts }) =>
               <Link href="/blog/[post]" as={`/blog/${post.slug}`}>
                 <a className={styles.postTitle}>{post.frontmatter.title}</a>
               </Link>
-              <p>{formatDate(post.frontmatter.date)}</p>
+              <p className={styles.postDate}>{formatDate(post.frontmatter.date)}</p>
             </li>
           ))}
       </ul>
