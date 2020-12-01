@@ -1,17 +1,13 @@
 .wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   min-height: 100%;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: left;
-  background-image: url('/img/line.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  opacity: 0.9;
+  margin: 1rem auto;
 }
 
 .smile {
@@ -33,6 +29,10 @@
   text-decoration: underline;
 }
 
+.hi {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) {
   .title {
     font-size: 4rem;
@@ -40,6 +40,11 @@
     width: 45vw;
     padding: 1rem 2rem;
     color: white;
+    background-image: url('/img/line.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.9;
   }
 
   .wrapper {
@@ -56,9 +61,5 @@
     align-items: center;
     min-height: 85vh;
     width: 65vw;
-  }
-
-  .hi {
-    text-decoration: underline;
   }
 }
