@@ -6,11 +6,12 @@
 }
 
 .postTitle {
-  font-size: 36px;
+  font-size: 32px;
+  text-decoration: underline;
 }
 
 .postDate {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .list > li {
@@ -20,15 +21,5 @@
 @media screen and (min-width: 768px) {
   .list {
     margin: 3rem 0;
-  }
-}
-
-.postTitle {
-  text-decoration: underline;
-}
-
-@media screen and (min-width: 768px) {
-  .postTitle {
-    font-size: 2.25rem;
   }
 }

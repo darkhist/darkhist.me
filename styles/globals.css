@@ -68,6 +68,7 @@ article > ol > li > a {
 /* code blocks */
 pre {
   font-size: 24px;
+  overflow-y: scroll;
 }
 
 /* inline code snippets */

@@ -6,8 +6,9 @@
 
 .title {
   font-size: 3rem;
-  text-align: left;
+  text-align: center;
   margin: 1rem auto;
+  color: black;
 }
 
 .smile {
@@ -15,8 +16,9 @@
 }
 
 .section {
-  font-size: 2.25rem;
+  font-size: 2rem;
   display: flex;
+  text-align: center;
   align-content: center;
   min-height: 75%;
   width: 100%;
@@ -44,7 +46,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: 0.9;
   }
 
   .wrapper {
