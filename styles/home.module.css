@@ -41,11 +41,7 @@
     margin: 2rem;
     width: 45vw;
     padding: 1rem 2rem;
-    color: white;
-    background-image: url('/img/line.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    color: black;
   }
 
   .wrapper {
