@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import matter from 'gray-matter';
 import { motion } from 'framer-motion';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { a11yDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import dracula from 'react-syntax-highlighter/dist/cjs/styles/prism/dracula';
 
 import Layout from '../../components/Layout';
 
@@ -14,7 +14,12 @@ import getSlugs from '../../util/getSlugs';
 import formatDate from '../../util/formatDate';
 
 const CodeBlock = ({ language, value }) => (
-  <SyntaxHighlighter language={language} style={a11yDark}>
+  <SyntaxHighlighter
+    wrapLines
+    lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}
+    language={language}
+    style={dracula}
+  >
     {value}
   </SyntaxHighlighter>
 );
@@ -38,9 +43,6 @@ const BlogPost = ({ frontmatter, markdownBody }) => {
     <Layout>
       <h1 className={styles.title}>{title}</h1>
       <p className={styles.date}>{formatDate(date)}</p>
-      <div className={styles.divider}>
-        <span role="presentation"> &#9759; </span>
-      </div>
       <article className={styles.content}>
         <ReactMarkdown escapeHtml={false} source={markdownBody} renderers={{ code: CodeBlock }} />
       </article>
