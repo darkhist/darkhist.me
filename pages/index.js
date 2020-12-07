@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Layout from '../components/Layout';
 import styles from '../styles/home.module.css';
 
@@ -8,6 +9,15 @@ const Home = () => (
         hi, I&apos;m <del>Quinn</del>
         <br />
         <ins>darkhist</ins>
+        <div>
+          <Image
+            className={styles.avatar}
+            src="/img/avatar.png"
+            width={300}
+            height={300}
+            alt="Quinn at the SF MOMA"
+          />
+        </div>
       </h1>
 
       <section className={styles.section}>

@@ -11,6 +11,15 @@
   color: black;
 }
 
+.avatar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 1.25rem 0;
+}
+
 .smile {
   padding: 0 8px;
 }
@@ -58,5 +67,19 @@
     align-items: center;
     min-height: 85vh;
     width: 65vw;
+  }
+
+  .avatar {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 50%;
+    margin: 5rem 10rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .avatar {
+    margin: 5rem 0.5rem;
   }
 }
