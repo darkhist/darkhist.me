@@ -29,7 +29,13 @@ const Nav = () => (
         </Link>
       </motion.li>
       <motion.li whileHover={{ scale: 1.25 }}>
-        <a href="https://github.com/darkhist" target="_blank" rel="noreferrer" aria-label="GitHub">
+        <a
+          id="gh"
+          href="https://github.com/darkhist"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+        >
           <GitHub />
         </a>
       </motion.li>
