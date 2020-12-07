@@ -66,22 +66,22 @@ article > ol > li > a {
 }
 
 /* code blocks */
-pre {
+/* pre {
   font-size: 24px;
   overflow-y: scroll;
-}
+} */
 
 /* inline code snippets */
 p > code {
-  background-color: #2b2b2b;
-  color: #ffa07a;
+  background-color: rgb(40, 42, 54);
+  color: rgb(248, 248, 242);
   margin: 0 2px;
   overflow-wrap: break-word;
 }
 
 @media screen and (min-width: 768px) {
   p > code {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 
