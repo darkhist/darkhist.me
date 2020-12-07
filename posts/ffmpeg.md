@@ -19,7 +19,7 @@ Open your Terminal to get started!
 
 If you don’t have Homebrew, you can get it by running
 
-```
+```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
@@ -44,7 +44,7 @@ In my case, this would look like `cd Documents/music`
 
 Finally, we can use the following command to create our music video!
 
-```
+```bash
 ffmpeg \-i song.mp3 \-stream_loop -1 \-i cool-gif.gif \-codec:v libx264 \-preset slow \-tune animation \-codec:a aac \-pix_fmt yuv420p \-shortest \mv.mp4
 ```
 
@@ -58,7 +58,7 @@ I named my output file `mv.mp4`, but you can name yours whatever you’d like. A
 
 `ffmpeg`: Invokes the FFmpeg program
 
-`-i [file]` : Indicates that the specified file will be used as an input
+`-i [file]`: Indicates that the specified file will be used as an input
 
 `-stream_loop -1`: Sets the number of times an input should be looped. In our case, we want our GIF to loop forever, so we set the loop count to -1
 
