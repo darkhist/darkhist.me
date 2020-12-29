@@ -12,9 +12,7 @@ const projects = [
     `,
     href: 'https://hellotyche.com',
     ghref: 'https://github.com/darkhist/tyche',
-    date: '2020 [WIP]',
-    src: '/img/city.png',
-    alt: 'A busy city with a four-way highway interchage and buildings'
+    date: '2020 [WIP]'
   },
   {
     title: 'Bookworm',
@@ -24,9 +22,7 @@ const projects = [
     `,
     href: 'https://bookworm.netlify.app/',
     ghref: 'https://github.com/darkhist/bookworm',
-    date: '2019',
-    src: '/img/book.png',
-    alt: 'Open book, a latte with flower art, and a pair of glasses'
+    date: '2019'
   },
   {
     title: 'Stomping Grounds Cafe',
@@ -34,9 +30,7 @@ const projects = [
     My favorite coffee shop in Ames didn't have a website, so I made them one`,
     href: 'https://sgcafe.netlify.app/',
     ghref: 'https://github.com/darkhist/stomping-grounds',
-    date: '2018',
-    src: '/img/sg.png',
-    alt: 'Two coffees, a notebook, and a newspaper on a table'
+    date: '2018'
   },
   {
     title: 'Open Source: Firefox Developer Tools',
@@ -44,9 +38,7 @@ const projects = [
     and squashed a few documentation issues`,
     href: 'https://github.com/darkhist/debugger.html',
     ghref: 'https://github.com/darkhist/debugger.html',
-    date: '2018',
-    src: '/img/avatar.png',
-    alt: 'Quinn Salas at the San Francisco Museum of Modern Art'
+    date: '2018'
   },
   {
     title: 'Art Installation: Revival Magazine Issue 12 Twitter Bot',
@@ -54,9 +46,7 @@ const projects = [
     streamed them to my Terminal, and projected them so people could share their
     thoughts
     `,
-    date: '2017',
-    src: '/img/revival.png',
-    alt: 'A girl standing against a pink wall holding a magazine'
+    date: '2017'
   }
 ];
 

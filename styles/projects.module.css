@@ -1,13 +1,27 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 15vw);
+}
+
 .title {
   font-size: 48px;
   text-align: center;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 
 @media screen and (min-width: 768px) {
   .title {
-    font-size: 4rem;
-    margin: 1rem auto;
+    font-size: 24px;
+    margin: 4rem auto;
+  }
+
+  .list {
+    margin: 0;
+  }
+
+  .projectTitle {
+    font-size: 36px;
+    font-weight: bold;
   }
 }
 
@@ -19,16 +33,4 @@
 
 .list > li {
   padding: 0 0 2rem 0;
-}
-
-@media screen and (min-width: 768px) {
-  .list {
-    margin: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .projectTitle {
-    font-size: 1.15rem;
-  }
 }

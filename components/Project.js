@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -6,17 +5,12 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import styles from '../styles/project.module.css';
 
 const Project = ({ title, description, href, ghref, date, src, alt }) => (
-  <div className={styles.row}>
-    <div className={styles.imgContainer}>
-      <Image src={src} alt={alt} width={250} height={250} className={styles.img} />
-    </div>
-    <div className={styles.content}>
-      <a href={href} className={styles.title} target="_blank" rel="noopener noreferrer">
-        {title}
-      </a>
-      <p>{description}</p>
-      <div className={styles.misc}>
-        <span className={styles.date}>{date}</span>
+  <div className={styles.wrapper}>
+    <div>
+      <div className={styles.content}>
+        <a href={href} className={styles.title} target="_blank" rel="noopener noreferrer">
+          {title}
+        </a>
         <span>
           {ghref && (
             <a
@@ -30,6 +24,12 @@ const Project = ({ title, description, href, ghref, date, src, alt }) => (
             </a>
           )}
         </span>
+      </div>
+      <div>
+        <p>{description}</p>
+        <div className={styles.misc}>
+          <span className={styles.date}>{date}</span>
+        </div>
       </div>
     </div>
   </div>

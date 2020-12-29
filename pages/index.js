@@ -15,6 +15,7 @@ const Home = () => (
 
       <section className={styles.section}>
         <div className={styles.about}>
+          <p>he / him | kc / dsm</p>
           <p>full stack software engineer </p>
           <p>
             currently breaking stuff at
@@ -39,7 +40,6 @@ const Home = () => (
               Instagram
             </a>
           </p>
-          <p>he / him | kc / dsm</p>
         </div>
       </section>
     </div>
