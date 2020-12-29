@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 85vw;
   justify-content: center;
-  margin: 0;
+  margin: 2rem 1rem;
 }
 
 .title {
@@ -78,10 +78,6 @@
     width: 75vw;
   }
 
-  .title {
-    font-size: 86px;
-  }
-
   .title:hover {
     animation: rainbow-text-simple-animation 1s ease-in forwards;
     cursor: pointer;
@@ -94,7 +90,7 @@
   }
 
   .link {
-    font-size: 32px;
+    font-size: 22px;
     padding: 0 12px;
   }
 
@@ -137,7 +133,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    font-size: 32px;
+    font-size: 22px;
   }
 
   .section {

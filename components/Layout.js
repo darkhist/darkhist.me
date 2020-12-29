@@ -18,10 +18,11 @@ const Layout = ({ children, home }) => (
       />
     </Head>
 
-    <main>{children}</main>
-    <footer>
+    <header>
       <Nav home={home} />
-    </footer>
+    </header>
+
+    <main>{children}</main>
   </div>
 );
 
