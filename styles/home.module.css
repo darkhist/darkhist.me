@@ -11,6 +11,35 @@
   text-align: center;
   margin: 1rem auto;
   color: black;
+  /* Fallback: Set a background color. */
+  background-color: #a7489b;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(
+    100deg,
+    #476098 16.666%,
+    #a7489b 16.666%,
+    #a7489b 33.333%,
+    #a7489b 33.333%,
+    #a7489b 50%,
+    #a7489b 50%,
+    #476098 66.666%,
+    #476098 66.666%,
+    #476098 83.333%,
+    #a7489b 83.333%
+  );
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
 }
 
 .title > del {
@@ -19,23 +48,26 @@
   padding: 0 1rem 0 0;
 }
 
+.link {
+  color: #a7489b;
+  font-size: 24px;
+  padding: 0 8px;
+  text-decoration: underline;
+}
+
 .smile {
   padding: 0 8px;
 }
 
 .section {
-  font-size: 2rem;
+  font-size: 22px;
   display: flex;
-  align-content: right;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   min-height: 75%;
   width: 100%;
   color: white;
-  margin: 0 auto;
-}
-
-.principal {
-  padding: 0 8px;
-  text-decoration: underline;
 }
 
 .hi {
@@ -45,47 +77,23 @@
 @media screen and (min-width: 768px) {
   .wrapper {
     flex-direction: column;
-    color: black;
+    color: white;
     height: 75vh;
     width: 75vw;
   }
+
   .title {
-    font-size: 64px;
-    /* Fallback: Set a background color. */
-    background-color: #a7489b;
-
-    /* Create the gradient. */
-    background-image: linear-gradient(
-      100deg,
-      #476098 16.666%,
-      #a7489b 16.666%,
-      #a7489b 33.333%,
-      #a7489b 33.333%,
-      #a7489b 50%,
-      #a7489b 50%,
-      #476098 66.666%,
-      #476098 66.666%,
-      #476098 83.333%,
-      #a7489b 83.333%
-    );
-
-    /* Set the background size and repeat properties. */
-    background-size: 100%;
-    background-repeat: repeat;
-
-    /* Use the text as a mask for the background. */
-    /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    /* Animate the text when loading the element. */
-    /* This animates it on page load and when hovering out. */
-    animation: rainbow-text-simple-animation-rev 1.25s ease-out backwards;
+    font-size: 86px;
   }
 
   .title:hover {
     animation: rainbow-text-simple-animation 1s ease-in forwards;
     cursor: pointer;
+  }
+
+  .link {
+    font-size: 36px;
+    padding: 0 12px;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -125,10 +133,14 @@
   .section {
     display: flex;
     flex-direction: row;
+    text-align: center;
     justify-content: center;
-    width: 27vw;
+    align-items: center;
+    margin: -6rem auto;
+    height: fit-content;
+    width: 65vw;
     line-height: 1.25;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 36px;
   }
 }

@@ -1,47 +1,45 @@
-import Image from 'next/image';
-import Nav from '../components/Nav';
 import Layout from '../components/Layout';
+
 import styles from '../styles/home.module.css';
 
 const Home = () => (
-  <Layout>
+  <Layout home>
     <div className={styles.wrapper}>
       <div>
-        <h1 className={styles.title}>darkhist</h1>
+        <h1 className={styles.title}>
+          <del>Quinn Salas</del>
+          <br />
+          <ins>darkhist</ins>
+        </h1>
       </div>
 
       <section className={styles.section}>
         <div className={styles.about}>
-          <p>Hey, I&apos;m Quinn</p>
+          <p>full stack software engineer </p>
           <p>
-            full Stack Software Engineer @
+            currently breaking stuff at
             <a
-              href="https://principal.com"
+              href="https://openloophealth.com"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.principal}
+              className={styles.link}
             >
               OpenLoop
             </a>
           </p>
-          {/* Currently, I&apos;m making cool stuff at
+
+          <p>
+            follow me on
             <a
-              href="https://principal.com"
+              href="https://instagram.com/darkhist"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.principal}
+              className={styles.link}
             >
-              Principal
+              Instagram
             </a>
-            <br /> I&apos;m really into accessibility, open source software, art, collecting pins,
-            and emoticons with noses
-            <span role="img" aria-label="smiley face" className={styles.smile}>
-              :~)
-            </span>
-            <a className={styles.hi} href="mailto:qmsalas321@gmail.com">
-              Say hello!
-            </a>
-          </p> */}
+          </p>
+          <p>he / him | kc / dsm</p>
         </div>
       </section>
     </div>
