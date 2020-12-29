@@ -1,17 +1,18 @@
 .list {
-  margin: 2.5rem 0;
+  margin: 2.5rem 1.5rem;
   padding: 0;
   list-style-type: none;
   text-align: center;
 }
 
 .postTitle {
-  font-size: 32px;
+  font-size: 22px;
   text-decoration: underline;
+  color: #a7489b;
 }
 
 .postDate {
-  font-size: 30px;
+  font-size: 22px;
 }
 
 .list > li {
