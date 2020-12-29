@@ -94,6 +94,7 @@ blockquote > p {
   border-left: 5px solid #a7489b;
   padding: 0 0 0 1rem;
   font-style: italic;
+  margin: 0;
 }
 
 blockquote > p > a {

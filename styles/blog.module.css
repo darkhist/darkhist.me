@@ -33,9 +33,3 @@
   /* Animate the text when loading the element. */
   /* This animates it on page load and when hovering out. */
 }
-
-@media screen and (min-width: 768px) {
-  .title {
-    margin: 0;
-  }
-}
