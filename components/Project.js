@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import styles from '../styles/project.module.css';
 
-const Project = ({ title, description, href, ghref, date }) => (
+const Project = ({ title, description, href, date }) => (
   <div className={styles.wrapper}>
     <div>
       <div className={styles.content}>
@@ -21,15 +19,13 @@ const Project = ({ title, description, href, ghref, date }) => (
 );
 
 Project.defaultProps = {
-  href: null,
-  ghref: null
+  href: null
 };
 
 Project.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   href: PropTypes.string,
-  ghref: PropTypes.string,
   date: PropTypes.string.isRequired
 };
 
