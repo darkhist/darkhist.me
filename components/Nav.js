@@ -8,32 +8,26 @@ const Nav = ({ home }) => (
   <nav className={styles.nav}>
     <ul>
       {!home && (
-        <li>
+        <li className={styles.link}>
           <Link href="/">
-            <a aria-label="Home">
-              <Home className={styles.icon} />
-            </a>
+            <a aria-label="Home">home</a>
           </Link>
         </li>
       )}
 
-      <li>
+      <li className={styles.link}>
         <Link href="/blog">
-          <a aria-label="Blog">
-            <Edit className={styles.icon} />
-          </a>
+          <a aria-label="Blog">blog</a>
         </Link>
       </li>
 
-      <li>
+      <li className={styles.link}>
         <Link href="/projects">
-          <a aria-label="Projects">
-            <Box className={styles.icon} />
-          </a>
+          <a aria-label="Projects">work</a>
         </Link>
       </li>
 
-      <li>
+      <li className={styles.link}>
         <a
           id="gh"
           href="https://github.com/darkhist"
@@ -41,13 +35,13 @@ const Nav = ({ home }) => (
           rel="noreferrer"
           aria-label="GitHub"
         >
-          <GitHub className={styles.icon} />
+          github
         </a>
       </li>
 
-      <li>
+      <li className={styles.link}>
         <a href="mailto:qmsalas321@gmail.com" aria-label="Email">
-          <Mail className={styles.icon} />
+          contact
         </a>
       </li>
     </ul>

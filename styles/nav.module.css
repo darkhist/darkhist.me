@@ -7,21 +7,15 @@
   margin: 2rem 0;
 }
 
-@media screen and (min-width: 768px) {
-  .nav > ul {
-    justify-content: center;
-  }
-}
-
-.nav > ul > li {
+.link {
+  margin: 0;
   color: white;
-  padding: 0 1rem;
+  padding: 0 5px;
+  font-size: 18px;
 }
 
-.icon {
-  margin: 0 10px;
-}
-
-.icon:hover {
-  cursor: pointer;
+@media screen and (min-width: 768px) {
+  .link:hover {
+    cursor: pointer;
+  }
 }
