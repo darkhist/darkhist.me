@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Home, Edit, Box, GitHub, Instagram, Mail } from 'react-feather';

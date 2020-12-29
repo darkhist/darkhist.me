@@ -1,7 +1,9 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  width: 85vw;
+  justify-content: center;
+  margin: 1rem;
 }
 
 .title {
@@ -9,15 +11,48 @@
   text-align: center;
   margin: 1rem auto;
   color: black;
+  /* Fallback: Set a background color. */
+  background-color: #a7489b;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(
+    100deg,
+    #476098 16.666%,
+    #a7489b 16.666%,
+    #a7489b 33.333%,
+    #a7489b 33.333%,
+    #a7489b 50%,
+    #a7489b 50%,
+    #476098 66.666%,
+    #476098 66.666%,
+    #476098 83.333%,
+    #a7489b 83.333%
+  );
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
 }
 
-.avatar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin: 1.25rem 0;
+.title > del {
+  text-decoration: 5px line-through;
+  text-decoration-color: #a7489b;
+  padding: 0 1rem 0 0;
+}
+
+.link {
+  color: #a7489b;
+  font-size: 24px;
+  padding: 0 8px;
+  text-decoration: underline;
 }
 
 .smile {
@@ -25,61 +60,85 @@
 }
 
 .section {
-  font-size: 2rem;
+  font-size: 22px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  align-content: center;
   min-height: 75%;
   width: 100%;
-  color: black;
-  margin: 0 auto;
-}
-
-.principal {
-  padding: 0 8px;
-  text-decoration: underline;
-}
-
-.hi {
-  text-decoration: underline;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
-  .title {
-    font-size: 4rem;
-    margin: 2rem;
-    width: 45vw;
-    padding: 1rem 2rem;
-    color: black;
+  .wrapper {
+    flex-direction: column;
+    color: white;
+    height: 75vh;
+    width: 75vw;
   }
 
-  .wrapper {
-    flex-direction: row;
-    margin: 2rem;
-    border: 3px solid black;
+  .title:hover {
+    animation: rainbow-text-simple-animation 1s ease-in forwards;
+    cursor: pointer;
   }
 
   .section {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 0 0;
+  }
+
+  .link {
+    font-size: 22px;
+    padding: 0 12px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .title {
+      animation: none;
+    }
+  }
+
+  /* Move the background and make it smaller. */
+  /* Animation shown when entering the page and after the hover animation. */
+  @keyframes rainbow-text-simple-animation-rev {
+    0% {
+      background-size: 650%;
+    }
+    40% {
+      background-size: 650%;
+    }
+    100% {
+      background-size: 100%;
+    }
+  }
+
+  /* Move the background and make it larger. */
+  /* Animation shown when hovering over the text. */
+  @keyframes rainbow-text-simple-animation {
+    0% {
+      background-size: 100%;
+    }
+    80% {
+      background-size: 650%;
+    }
+    100% {
+      background-size: 650%;
+    }
+  }
+
+  .about {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    min-height: 85vh;
-    width: 65vw;
+    margin: 0 auto;
+    font-size: 22px;
   }
 
-  .avatar {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    border-radius: 50%;
-    margin: 5rem 10rem;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1400px) {
-  .avatar {
-    margin: 5rem 0.5rem;
+  .section {
+    line-height: 1.25;
+    font-weight: bold;
+    font-size: 36px;
   }
 }

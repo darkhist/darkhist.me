@@ -47,9 +47,7 @@ const BlogPost = ({ frontmatter, markdownBody }) => {
         <ReactMarkdown escapeHtml={false} source={markdownBody} renderers={{ code: CodeBlock }} />
       </article>
       <div className={styles.back}>
-        <Link href="/blog">
-          <motion.a whileHover={{ scale: 1.125 }}> Go back </motion.a>
-        </Link>
+        <Link href="/blog">Go back</Link>
       </div>
     </Layout>
   );

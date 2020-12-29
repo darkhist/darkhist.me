@@ -18,7 +18,7 @@ const Layout = ({ children }) => (
       />
     </Head>
 
-    <header>
+    <header className={styles.header}>
       <Nav />
     </header>
 

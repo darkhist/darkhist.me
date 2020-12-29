@@ -1,50 +1,43 @@
-import Image from 'next/image';
 import Layout from '../components/Layout';
+
 import styles from '../styles/home.module.css';
 
 const Home = () => (
-  <Layout>
+  <Layout home>
     <div className={styles.wrapper}>
-      <h1 className={styles.title}>
-        hi, I&apos;m <del>Quinn</del>
-        <br />
-        <ins>darkhist</ins>
-        <div>
-          <Image
-            className={styles.avatar}
-            src="/img/avatar.png"
-            width={300}
-            height={300}
-            alt="Quinn at the SF MOMA"
-          />
-        </div>
-      </h1>
+      <div>
+        <h1 className={styles.title}>
+          <del>Quinn Salas</del>
+          <br />
+          <ins>darkhist</ins>
+        </h1>
+      </div>
 
       <section className={styles.section}>
         <div className={styles.about}>
-          <p>It&apos;s nice to meet you</p>
-          <p>I&apos;m a software engineer based in Des Moines</p>
+          <p>he / him | kc / dsm</p>
+          <p>full stack software engineer </p>
           <p>
-            Currently, I&apos;m making cool stuff at
+            currently breaking stuff at
             <a
-              href="https://principal.com"
+              href="https://openloophealth.com"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.principal}
+              className={styles.link}
             >
-              Principal
+              OpenLoop
             </a>
           </p>
+
           <p>
-            I&apos;m really into accessibility, open source software, art, collecting pins, and
-            emoticons with noses
-            <span role="img" aria-label="smiley face" className={styles.smile}>
-              :~)
-            </span>
-          </p>
-          <p>
-            <a className={styles.hi} href="mailto:qmsalas321@gmail.com">
-              Say hello!
+            follow me on
+            <a
+              href="https://instagram.com/darkhist"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              Instagram
             </a>
           </p>
         </div>

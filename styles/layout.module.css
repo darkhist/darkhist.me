@@ -1,7 +1,14 @@
 .container {
-  min-height: 100vh;
-  padding: 1rem 2rem 0 2rem;
+  height: 85vh;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin: 8rem auto;
 }
+
+/* @media screen and (min-width: 768px) {
+  .container {
+    margin: 20rem 0;
+  }
+} */
