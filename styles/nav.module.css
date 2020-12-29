@@ -8,12 +8,12 @@
 
 @media screen and (min-width: 768px) {
   .nav > ul {
-    justify-content: flex-end;
-    margin: 1rem 1.75rem 0 0;
+    justify-content: center;
   }
 }
 
 .nav > ul > li {
+  color: white;
   padding: 0 0.5rem;
 }
 
