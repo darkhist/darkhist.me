@@ -8,7 +8,7 @@ import styles from '../styles/blog.module.css';
 
 const Blog = ({ posts }) => (
   <Layout>
-    <h1 className={styles.title}> Thoughts, Ideas, and Everything Else </h1>
+    <h1 className={styles.title}> Anaphora </h1>
     <PostList posts={posts} />
   </Layout>
 );

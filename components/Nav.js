@@ -1,33 +1,35 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import { Home, Edit, Box, GitHub, Mail } from 'react-feather';
+import { motion } from 'framer-motion';
+import { Home, Edit, Box, GitHub, Instagram, Mail } from 'react-feather';
 
 import styles from '../styles/nav.module.css';
 
-const Nav = ({ home }) => (
+const Nav = () => (
   <nav className={styles.nav}>
     <ul>
-      {!home && (
-        <li className={styles.link}>
-          <Link href="/">
-            <a aria-label="Home">home</a>
-          </Link>
-        </li>
-      )}
-
-      <li className={styles.link}>
+      <motion.li whileHover={{ scale: 1.25 }}>
+        <Link href="/">
+          <a aria-label="Home">
+            <Home className={styles.icon} />
+          </a>
+        </Link>
+      </motion.li>
+      <motion.li whileHover={{ scale: 1.25 }}>
         <Link href="/blog">
-          <a aria-label="Blog">blog</a>
+          <a aria-label="Blog">
+            <Edit className={styles.icon} />
+          </a>
         </Link>
-      </li>
-
-      <li className={styles.link}>
+      </motion.li>
+      <motion.li whileHover={{ scale: 1.25 }}>
         <Link href="/projects">
-          <a aria-label="Projects">work</a>
+          <a aria-label="Projects">
+            <Box className={styles.icon} />
+          </a>
         </Link>
-      </li>
-
-      <li className={styles.link}>
+      </motion.li>
+      <motion.li whileHover={{ scale: 1.25 }}>
         <a
           id="gh"
           href="https://github.com/darkhist"
@@ -35,25 +37,26 @@ const Nav = ({ home }) => (
           rel="noreferrer"
           aria-label="GitHub"
         >
-          github
+          <GitHub />
         </a>
-      </li>
-
-      <li className={styles.link}>
+      </motion.li>
+      <motion.li whileHover={{ scale: 1.25 }}>
+        <a
+          href="https://instagram.com/darkhist"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagram"
+        >
+          <Instagram />
+        </a>
+      </motion.li>
+      <motion.li whileHover={{ scale: 1.25 }}>
         <a href="mailto:qmsalas321@gmail.com" aria-label="Email">
-          contact
+          <Mail />
         </a>
-      </li>
+      </motion.li>
     </ul>
   </nav>
 );
-
-Nav.defaultProps = {
-  home: false
-};
-
-Nav.propTypes = {
-  home: PropTypes.bool
-};
 
 export default Nav;

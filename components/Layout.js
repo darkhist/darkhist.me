@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Nav from './Nav';
 import styles from '../styles/layout.module.css';
 
-const Layout = ({ children, home }) => (
+const Layout = ({ children }) => (
   <div className={styles.container}>
     <Head>
       <title>Quinn Salas</title>
@@ -18,8 +18,8 @@ const Layout = ({ children, home }) => (
       />
     </Head>
 
-    <header>
-      <Nav home={home} />
+    <header className={styles.header}>
+      <Nav />
     </header>
 
     <main>{children}</main>
@@ -27,13 +27,11 @@ const Layout = ({ children, home }) => (
 );
 
 Layout.defaultProps = {
-  children: [],
-  home: false
+  children: []
 };
 
 Layout.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
-  home: PropTypes.bool
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node])
 };
 
 export default Layout;
