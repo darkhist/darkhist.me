@@ -1,7 +1,6 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  height: 75vh;
   width: 85vw;
   justify-content: center;
   margin: 1rem;
