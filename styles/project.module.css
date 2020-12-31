@@ -1,9 +1,9 @@
 .title {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   text-decoration: underline;
   text-decoration-color: #a7489b;
+  padding: 0 3rem;
 }
 
 .content {
@@ -20,4 +20,5 @@
 
 .description {
   font-size: 22px;
+  padding: 0 3rem;
 }
